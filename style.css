@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 5px;
+    height: 270px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #575757e2;
+    color: #fff;
+    font-size: 12px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.content h1 {
+    font-size: 1.3rem;
+}
+.content .efeito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #515050;
+    height: 35px;
+    width: 135px;
+    border-radius: 40px;
+}
+.content .efeito input {
+    width: 75%;
+    text-align: end;
+    text-decoration: none;
+    border: 4px solid rgb(117, 117, 117);
+    background-color: rgb(219, 212, 212);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.content ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: 30px;
+    grid-template-rows: auto auto auto auto 22px;
+    gap: 5px;
+
+}
+.content ul li {
+    list-style: none;
+    padding: 5px;
+    background-color: #413c3c;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(19, 19, 19);
+    width: 25px;
+    height: 22px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.content ul li:hover {
+    width: 24px;
+}
+.content ul .desliga {
+    font-size: 8px;
+}
+.content ul .ligar {
+    list-style: none;
+    padding: 5px;
+    background-color: #3ead93;
+    border-radius: 50%;
+    font-size: 7px;
+    width: 23px;
+    height: 25px;
+    text-align: center;
+}
+.content ul .especiais {
+    list-style: none;
+    background-color: #dae26a;
+    border-radius: 50%;
+    font-size: 7px;
+    width: 23px;
+    height: 12px;
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.content ul .soma {
+    list-style: none;
+    background-color: #3ead93;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 22px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
