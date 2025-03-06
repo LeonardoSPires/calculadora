@@ -100,6 +100,7 @@
     margin-top: 10px;
     display: flex;
     align-items: center;
+    color: #000;
 }
 .content ul #soma {
     list-style: none;
