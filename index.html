@@ -11,37 +11,37 @@
         <div class="content">
             <h1>Calculadora</h1>
             <div class="efeito">
-                <input placeholder="0">
+                <input class="tela" placeholder="" disabled>
             </div>
             
             <div class="numeros">
-                <ul>
-                    <li class="ligar">ON CE</li>
-                    <li class="especiais">MRC</li>
-                    <li class="especiais">M-</li>
-                    <li class="especiais">M+</li>
-                    <li class="desliga">OFF</li>
-                    <li class="raiz">√</li>
-                    <li class="porcentagem">%</li>
-                    <li class="dividir">÷</li>
-                    <li class="sete">7</li>
-                    <li class="oito">8</li>
-                    <li class="nove">9</li>
-                    <li class="vezes">X</li>
-                    <li class="quatro">4</li>
-                    <li class="cinco">5</li>
-                    <li class="seis">6</li>
-                    <li class="menos">-</li>
-                    <li class="um">1</li>
-                    <li class="dois">2</li>
-                    <li class="treis">3</li>
-                    <li class="soma">+</li>
-                    <li class="zero">0</li>
-                    <li class="ponto">.</li>
-                    <li class="igual">=</li>
-                </ul>
+                <ul >
+                    <li onclick="ligar()" class="ligar">ON CE</li>
+                    <li onclick="calcularMRC()" class="especiais" id="btnMRC">MRC</li>
+                    <li onclick="salvaMenos()" class="especiais" id="btnM-">M-</li>
+                    <li onclick="salvaMais()"  class="especiais" id="btnM+">M+</li>
+                    <li onclick="desligar()" class="desliga">OFF</li>
+                    <li onclick="adicionar('√')" class="raiz">√</li>
+                    <li onclick="adicionar('%')" class="operador";>%</li>
+                    <li onclick="adicionar('/')" class="operador">÷</li>
+                     <li  onclick="adicionar('7')" class="numero">7</li>
+                    <li onclick="adicionar('8')" class="numero">8</li>
+                    <li onclick="adicionar('9')" class="nonumerove">9</li>
+                    <li onclick="adicionar('*')" class="operador">x</li>
+                    <li onclick="adicionar('4')" class="numero">4</li>
+                    <li onclick="adicionar('5')" class="numero">5</li>
+                    <li onclick="adicionar('6')" class="numero">6</li>
+                    <li onclick="adicionar('-')" class="operador">-</li>
+                    <li onclick="adicionar('1')" class="numero">1</li>
+                    <li onclick="adicionar('2')" class="numero">2</li>
+                    <li onclick="adicionar('3')" class="numero">3</li>
+                    <li onclick="adicionar('+')" class="operador" id="soma">+</li>
+                    <li onclick="adicionar('0')" class="numero">0</li>
+                    <li onclick="adicionar(',')" class="ponto">.</li>
+                    <li onclick="calcular()" class="igual">=</li>
             </div>
         </div>
     </div>
 </body>
+<script src="scripts.js"></script>
 </html>

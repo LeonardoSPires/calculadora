@@ -41,6 +41,7 @@
     border-radius: 40px;
 }
 .content .efeito input {
+
     width: 75%;
     text-align: end;
     text-decoration: none;
@@ -48,6 +49,7 @@
     background-color: rgb(219, 212, 212);
     border-radius: 5px;
     margin-bottom: 5px;
+    color: #000;
 }
 .content ul {
     display: grid;
@@ -99,7 +101,7 @@
     display: flex;
     align-items: center;
 }
-.content ul .soma {
+.content ul #soma {
     list-style: none;
     background-color: #3ead93;
     border-radius: 5px;
