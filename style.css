@@ -41,7 +41,6 @@
     border-radius: 40px;
 }
 .content .efeito input {
-
     width: 75%;
     text-align: end;
     text-decoration: none;
@@ -51,12 +50,17 @@
     margin-bottom: 5px;
     color: #000;
 }
+.tela::placeholder {
+    color: #000;
+}
+
 .content ul {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-areas: 30px;
     grid-template-rows: auto auto auto auto 22px;
     gap: 5px;
+    
 
 }
 .content ul li {

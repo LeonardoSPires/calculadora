@@ -1,18 +1,16 @@
 const telaInput = document.querySelector('.tela')
 const desativar = document.querySelectorAll('li')
-    
+
+
 function ligar() {
-    telaInput.disabled = false;
     telaInput.value =""
     telaInput.placeholder ="0"
-    telaInput.style.color="#000"
 }
 function desligar() {
     telaInput.placeholder =""
-    telaInput.value =""  
+    telaInput.value = ""  
     telaInput.style.color="rgb(219, 212, 212)"
 }
-
 
 function adicionar(valor) {
     document.querySelector(".tela").value += valor;
@@ -36,21 +34,40 @@ function calcular() {
     }
     
 }
-let btnMenos = document.getElementById('btnM-')
-let btnMais = document.getElementById('btnM+')
+
+let numerosNegativos = []
+
 function salvaMenos() {
-    btnMenos = telaInput.value * (-1)
-    console.log(btnMenos)
+    let lista = document.querySelector('.tela')
+    let valor = parseInt(lista.value * (-1))
+    numerosNegativos.push(valor)
+    console.log(numerosNegativos)
+    console.log(numerosNegativos.length)
     ligar()
 }
+let numerosPositivos = []
 function salvaMais() {
-    btnMais = telaInput.value 
-    console.log(btnMais)
+    let lista = document.querySelector('.tela')
+    let valor = parseInt(lista.value)
+    numerosPositivos.push(valor)
+    console.log(numerosPositivos)
+    console.log(numerosPositivos.length)
     ligar()
 }
-let soma = document.getElementById('btnMRC')
+let somaArrays = document.getElementById('btnMRC')
 function calcularMRC() {
-    soma = eval(btnMais + btnMenos) 
-    telaInput.value = soma
-    console.log(btnMais)
+
+let maxLength = Math.max(numerosNegativos.length, numerosPositivos.length);
+
+let somaArrays = Array.from({ length: maxLength }, (_, i) => 
+    (numerosNegativos[i] || 0) + (numerosPositivos[i] || 0)
+);
+
+let somaTotal = somaArrays.reduce((acumulador, valor) => acumulador + valor, 0);
+
+telaInput.value = somaTotal
+console.log(somaTotal)
+
+numerosNegativos = []
+numerosPositivos = []
 }
