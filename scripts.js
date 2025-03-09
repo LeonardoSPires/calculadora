@@ -5,6 +5,7 @@ const desativar = document.querySelectorAll('li')
 function ligar() {
     telaInput.value =""
     telaInput.placeholder ="0"
+    telaInput.style.color="#000"
 }
 function desligar() {
     telaInput.placeholder =""
